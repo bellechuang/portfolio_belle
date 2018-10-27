@@ -1,0 +1,77 @@
+:root {
+    --main-bg-color: #17606E;
+    --main-secondary-color:#FDD4C0; 
+    --active-second-color:#FBB897;
+}
+
+
+body {
+    font-family: roboto;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 36px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 18px;
+}
+
+i {
+    font-size: 24px;
+}
+
+.navbar {
+    background-color:#fff;
+}
+
+
+.btn-primary {
+    background-color: var(--main-bg-color);
+    border-color: var(--main-bg-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--main-secondary-color);
+    border-color: var(--main-secondary-color);
+    color: black;
+}
+
+.jumbotron {
+    background-color:#fff;
+    padding-top:100px;
+}
+
+.card {
+    margin:10px;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+
+
+#contactform {
+    background-color:#fff;
+}
+
+#contactbutton:hover {
+    color: var(--main-secondary-color);
+}
+
+#designprocess {
+    /* background-color:gray; */
+}
