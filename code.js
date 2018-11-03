@@ -43,8 +43,32 @@ $(document).ready(function($){
 	$(window).on('scroll', function(){
 		$timeline_block.each(function(){
 			if( $(this).offset().top <= $(window).scrollTop()+$(window).height()*0.75 && $(this).find('.cd-timeline-img').hasClass('is-hidden') ) {
-				$(this).find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
+				$(this).find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('is-visible').attr('data-aos', 'fade-up');
 			}
 		});
 	});
 });
+
+
+var formData = $("form").serialize();
+$("#sendEmail").click(function(){
+  console.log( formData );
+  $.post("https://api.formbucket.com/f/buk_F36vsC7xXGEnZ4Ic3lyyvwod", formData).done(function (data) {
+    console.log(data);
+    console.log("id === " + data.id);
+
+    // if everything is good // 
+
+    if(data.id) {
+      alert("message sent. thanks!")
+    }
+
+    // if everything is wrong// 
+
+    }else{
+      alert("message was not sent. try again!");
+    }
+
+  });
+});
+

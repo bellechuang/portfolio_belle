@@ -19,6 +19,7 @@ h2 {
 
 h3 {
     font-size: 36px;
+    color:#726C6C;
 }
 
 h4 {
@@ -74,4 +75,12 @@ i {
 
 #designprocess {
     /* background-color:gray; */
+}
+
+.header-projwork {
+    padding-bottom: 50px;
+}
+
+.project-text {
+    margin: auto;
 }
